@@ -1,3 +1,4 @@
+package src;
 
 public class Lista {
 	private int Tamano;
@@ -13,8 +14,12 @@ public class Lista {
 		return Tamano;
 	}
 
-	public double getarreglo(int i) {
+	public double getValor(int i) {
 		return arreglo[i];
+	}
+
+	public void setValor(int i, double valor) {
+		arreglo[i] = valor;
 	}
 
 	public void Agregar(Nodo nd) {

@@ -1,6 +1,10 @@
+package test;
+
 import org.junit.Test;
 
 import junit.framework.TestCase;
+import src.Calculos;
+import src.Lista;
 
 public class TestCalculos extends TestCase {
 
@@ -13,7 +17,7 @@ public class TestCalculos extends TestCase {
 		l1 = new Lista(arreglo2.length);
 
 		for (int i = 0; i < arreglo2.length; i++) {
-			l1.arreglo[i] = arreglo2[i];
+			l1.setValor(i, arreglo2[i]);
 		}
 
 		calculos = new Calculos(l1);
